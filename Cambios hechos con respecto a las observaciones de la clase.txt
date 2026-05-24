@@ -1,0 +1,13 @@
+se cambiaron los nombres de los paquetes "Chinanko.Chinanko" por "chinanko.chinanko" para cumplir con las buenas prácticas
+
+se implementó documentación dentro de swagger por medio de la anotación @Tag para reconocer el controlador
+y su autor de la siguiente manera:
+
+@Tag(name = "Town Management", 
+     description = "APIs for managing towns. Controller Author: Antony Daniel Muñoz Leal")
+
+de igual forma se implementaron comentarios haciendo referencia a la función de cada método por medio de la anotación @Operation 
+de la siguiente manera:
+
+@PostMapping
+@Operation(summary = "Create a new town")
